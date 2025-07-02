@@ -1,19 +1,20 @@
 {
-    "name":"Ad blocker",
-    "version":"1.0",
-    "desciption":"A simple ad blocker extension",
-    "permissions": [
-        "webRequest",
-        "webRequestBlocking",
-        "<all_urls>"
-    ],
-    "background": {
-        "scripts": ["background.js"]
-    },
-    "icons": {
-        "16": "icons/icon16.png",
-        "48": "icons/icon48.png",
-        "128": "icons/icon128.png"
-    },
-    "manifest_version": 2
+  "manifest_version": 3,
+  "name": "Simple Ad Blocker",
+  "version": "1.0",
+  "description": "Blocks requests to known ad servers for a cleaner browsing experience.",
+  "permissions": [
+    "declarativeNetRequest"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
 }
