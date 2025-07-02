@@ -11,8 +11,9 @@
         "scripts": ["background.js"]
     },
     "icons": {
-        "16": "icons/logo_16X16.png",
-        "48": "icons/logo_48X48.png",
-        "128": "icons/logo_128X128.png"
-    }
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    },
+    "manifest_version": 2
 }
